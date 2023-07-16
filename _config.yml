@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Arun Jacob"
+title                    : "Amine Malek"
 title_separator          : "-"
-name                     : &name "Arun Jacob"
+name                     : &name "Amine Malek"
 description              : &description "personal description"
 url                      : https://arungapatchka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,11 +80,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Arun Jacob"
+  name             : "Amine Malek"
   avatar           : "githubprofile.jpg"
-  bio              : "glumpenproletariat (noun): The melancholic stratum of the proletariat."
+  bio              : "A 19-year-old Computer Science Student, and Gaming Maestro"
   location         : 
-  employer         : "University of Toronto"
+  employer         : "Student"
   googlescholar    : "https://scholar.google.ca/citations?user=ewh3Q1AAAAAJ&hl=en&oi=ao"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
