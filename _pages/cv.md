@@ -11,14 +11,13 @@ redirect_from:
 
 Education
 ======
-* Dipl.T. Ontario College Advanced Diploma in Electronics Engineering Technology - Telecommunication, Mohawk College of Applied Arts and Technology, 2007
-* B.A. Combined Honours in Communication Studies, Cultural Studies and Critical Theory, McMaster University, 2010
-* M.P.C. Master of Professional Communication, Ryerson University, 2011
-* M.A. in Work and Society, McMaster University, 2017
-* M.A. in Cultural Studies and Critical Theory, McMaster University, 2019
-* Ph.D. in Information Studies, Media, Technology and Culture Concentration, University of Toronto, (In-Progress)
+* High School Graduation degree Lycée Secondaire Ksibet el Mediouni Sept 2018-June 2022
+* Informatics centered studies(8 hours of data,IT and algorithms)
+* Grade : 4.0
+* First introduction to the following programming languages and tools:Python,PHP,SQL,HTML,CSS etc.
+* Took German as an optional subject
 
-Work experience
+Volunteering
 ======
 * Summer 2021: Research Assistant
   * University of Toronto
