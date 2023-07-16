@@ -1,0 +1,251 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "bibtex",
+        "importPath": "pybtex.database.input",
+        "description": "pybtex.database.input",
+        "isExtraImport": true,
+        "detail": "pybtex.database.input",
+        "documentation": {}
+    },
+    {
+        "label": "pybtex.database.input.bibtex",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pybtex.database.input.bibtex",
+        "description": "pybtex.database.input.bibtex",
+        "detail": "pybtex.database.input.bibtex",
+        "documentation": {}
+    },
+    {
+        "label": "strptime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "html",
+        "description": "html",
+        "detail": "html",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "getorg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "getorg",
+        "description": "getorg",
+        "detail": "getorg",
+        "documentation": {}
+    },
+    {
+        "label": "Nominatim",
+        "importPath": "geopy",
+        "description": "geopy",
+        "isExtraImport": true,
+        "detail": "geopy",
+        "documentation": {}
+    },
+    {
+        "label": "html_escape",
+        "kind": 2,
+        "importPath": "markdown_generator.publications",
+        "description": "markdown_generator.publications",
+        "peekOfCode": "def html_escape(text):\n    \"\"\"Produce entities within text.\"\"\"\n    return \"\".join(html_escape_table.get(c,c) for c in text)\n# ## Creating the markdown files\n# \n# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the \"Recommended citation\")\n# In[5]:\nimport os\nfor row, item in publications.iterrows():\n    md_filename = str(item.pub_date) + \"-\" + item.url_slug + \".md\"",
+        "detail": "markdown_generator.publications",
+        "documentation": {}
+    },
+    {
+        "label": "publications",
+        "kind": 5,
+        "importPath": "markdown_generator.publications",
+        "description": "markdown_generator.publications",
+        "peekOfCode": "publications = pd.read_csv(\"publications.tsv\", sep=\"\\t\", header=0)\npublications\n# ## Escape special characters\n# \n# YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivilents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.\n# In[4]:\nhtml_escape_table = {\n    \"&\": \"&amp;\",\n    '\"': \"&quot;\",\n    \"'\": \"&apos;\"",
+        "detail": "markdown_generator.publications",
+        "documentation": {}
+    },
+    {
+        "label": "html_escape_table",
+        "kind": 5,
+        "importPath": "markdown_generator.publications",
+        "description": "markdown_generator.publications",
+        "peekOfCode": "html_escape_table = {\n    \"&\": \"&amp;\",\n    '\"': \"&quot;\",\n    \"'\": \"&apos;\"\n    }\ndef html_escape(text):\n    \"\"\"Produce entities within text.\"\"\"\n    return \"\".join(html_escape_table.get(c,c) for c in text)\n# ## Creating the markdown files\n# ",
+        "detail": "markdown_generator.publications",
+        "documentation": {}
+    },
+    {
+        "label": "html_escape",
+        "kind": 2,
+        "importPath": "markdown_generator.pubsFromBib",
+        "description": "markdown_generator.pubsFromBib",
+        "peekOfCode": "def html_escape(text):\n    \"\"\"Produce entities within text.\"\"\"\n    return \"\".join(html_escape_table.get(c,c) for c in text)\nfor pubsource in publist:\n    parser = bibtex.Parser()\n    bibdata = parser.parse_file(publist[pubsource][\"file\"])\n    #loop through the individual references in a given bibtex file\n    for bib_id in bibdata.entries:\n        #reset default date\n        pub_year = \"1900\"",
+        "detail": "markdown_generator.pubsFromBib",
+        "documentation": {}
+    },
+    {
+        "label": "publist",
+        "kind": 5,
+        "importPath": "markdown_generator.pubsFromBib",
+        "description": "markdown_generator.pubsFromBib",
+        "peekOfCode": "publist = {\n    \"proceeding\": {\n        \"file\" : \"proceedings.bib\",\n        \"venuekey\": \"booktitle\",\n        \"venue-pretext\": \"In the proceedings of \",\n        \"collection\" : {\"name\":\"publications\",\n                        \"permalink\":\"/publication/\"}\n    },\n    \"journal\":{\n        \"file\": \"pubs.bib\",",
+        "detail": "markdown_generator.pubsFromBib",
+        "documentation": {}
+    },
+    {
+        "label": "html_escape_table",
+        "kind": 5,
+        "importPath": "markdown_generator.pubsFromBib",
+        "description": "markdown_generator.pubsFromBib",
+        "peekOfCode": "html_escape_table = {\n    \"&\": \"&amp;\",\n    '\"': \"&quot;\",\n    \"'\": \"&apos;\"\n    }\ndef html_escape(text):\n    \"\"\"Produce entities within text.\"\"\"\n    return \"\".join(html_escape_table.get(c,c) for c in text)\nfor pubsource in publist:\n    parser = bibtex.Parser()",
+        "detail": "markdown_generator.pubsFromBib",
+        "documentation": {}
+    },
+    {
+        "label": "html_escape",
+        "kind": 2,
+        "importPath": "markdown_generator.talks",
+        "description": "markdown_generator.talks",
+        "peekOfCode": "def html_escape(text):\n    if type(text) is str:\n        return \"\".join(html_escape_table.get(c,c) for c in text)\n    else:\n        return \"False\"\n# ## Creating the markdown files\n# \n# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page.\n# In[5]:\nloc_dict = {}",
+        "detail": "markdown_generator.talks",
+        "documentation": {}
+    },
+    {
+        "label": "talks",
+        "kind": 5,
+        "importPath": "markdown_generator.talks",
+        "description": "markdown_generator.talks",
+        "peekOfCode": "talks = pd.read_csv(\"talks.tsv\", sep=\"\\t\", header=0)\ntalks\n# ## Escape special characters\n# \n# YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivilents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.\n# In[4]:\nhtml_escape_table = {\n    \"&\": \"&amp;\",\n    '\"': \"&quot;\",\n    \"'\": \"&apos;\"",
+        "detail": "markdown_generator.talks",
+        "documentation": {}
+    },
+    {
+        "label": "html_escape_table",
+        "kind": 5,
+        "importPath": "markdown_generator.talks",
+        "description": "markdown_generator.talks",
+        "peekOfCode": "html_escape_table = {\n    \"&\": \"&amp;\",\n    '\"': \"&quot;\",\n    \"'\": \"&apos;\"\n    }\ndef html_escape(text):\n    if type(text) is str:\n        return \"\".join(html_escape_table.get(c,c) for c in text)\n    else:\n        return \"False\"",
+        "detail": "markdown_generator.talks",
+        "documentation": {}
+    },
+    {
+        "label": "loc_dict",
+        "kind": 5,
+        "importPath": "markdown_generator.talks",
+        "description": "markdown_generator.talks",
+        "peekOfCode": "loc_dict = {}\nfor row, item in talks.iterrows():\n    md_filename = str(item.date) + \"-\" + item.url_slug + \".md\"\n    html_filename = str(item.date) + \"-\" + item.url_slug \n    year = item.date[:4]\n    md = \"---\\ntitle: \\\"\"   + item.title + '\"\\n'\n    md += \"collection: talks\" + \"\\n\"\n    if len(str(item.type)) > 3:\n        md += 'type: \"' + item.type + '\"\\n'\n    else:",
+        "detail": "markdown_generator.talks",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "g = glob.glob(\"*.md\")\ngeocoder = Nominatim()\nlocation_dict = {}\nlocation = \"\"\npermalink = \"\"\ntitle = \"\"\nfor file in g:\n    with open(file, 'r') as f:\n        lines = f.read()\n        if lines.find('location: \"') > 1:",
+        "detail": "talkmap",
+        "documentation": {}
+    },
+    {
+        "label": "geocoder",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "geocoder = Nominatim()\nlocation_dict = {}\nlocation = \"\"\npermalink = \"\"\ntitle = \"\"\nfor file in g:\n    with open(file, 'r') as f:\n        lines = f.read()\n        if lines.find('location: \"') > 1:\n            loc_start = lines.find('location: \"') + 11",
+        "detail": "talkmap",
+        "documentation": {}
+    },
+    {
+        "label": "location_dict",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "location_dict = {}\nlocation = \"\"\npermalink = \"\"\ntitle = \"\"\nfor file in g:\n    with open(file, 'r') as f:\n        lines = f.read()\n        if lines.find('location: \"') > 1:\n            loc_start = lines.find('location: \"') + 11\n            lines_trim = lines[loc_start:]",
+        "detail": "talkmap",
+        "documentation": {}
+    },
+    {
+        "label": "location",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "location = \"\"\npermalink = \"\"\ntitle = \"\"\nfor file in g:\n    with open(file, 'r') as f:\n        lines = f.read()\n        if lines.find('location: \"') > 1:\n            loc_start = lines.find('location: \"') + 11\n            lines_trim = lines[loc_start:]\n            loc_end = lines_trim.find('\"')",
+        "detail": "talkmap",
+        "documentation": {}
+    },
+    {
+        "label": "permalink",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "permalink = \"\"\ntitle = \"\"\nfor file in g:\n    with open(file, 'r') as f:\n        lines = f.read()\n        if lines.find('location: \"') > 1:\n            loc_start = lines.find('location: \"') + 11\n            lines_trim = lines[loc_start:]\n            loc_end = lines_trim.find('\"')\n            location = lines_trim[:loc_end]",
+        "detail": "talkmap",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "title = \"\"\nfor file in g:\n    with open(file, 'r') as f:\n        lines = f.read()\n        if lines.find('location: \"') > 1:\n            loc_start = lines.find('location: \"') + 11\n            lines_trim = lines[loc_start:]\n            loc_end = lines_trim.find('\"')\n            location = lines_trim[:loc_end]\n        location_dict[location] = geocoder.geocode(location)",
+        "detail": "talkmap",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "talkmap",
+        "description": "talkmap",
+        "peekOfCode": "m = getorg.orgmap.create_map_obj()\ngetorg.orgmap.output_html_cluster_map(location_dict, folder_name=\"../talkmap\", hashed_usernames=False)",
+        "detail": "talkmap",
+        "documentation": {}
+    }
+]
