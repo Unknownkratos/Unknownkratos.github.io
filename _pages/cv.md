@@ -20,9 +20,7 @@ Education
 Volunteering
 ======
 * Summer 2021: Research Assistant
-  * University of Toronto
-  * Duties included: Social Media Research on Academic Tiktok
-  * Supervisor: Dr. Sara Grimes
+  * 
 
 * Summer 2021: Research Assistant
   * University of Toronto
