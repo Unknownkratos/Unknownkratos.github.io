@@ -1,0 +1,18 @@
+
+
+Hello there !
+
+I am thrilled to have you here. As a passionate Computer Science Student , I am excited to share my journey and showcase my work in the realm of open source programming. I invite you to explore the diverse range of projects I have been involved in, you will find my commitment to clean code, efficiency, and attention to detail.
+Whether you are a fellow enthusiast, a potential collaborator, or an employer, I hope that this portfolio provides you with insight into my skills, experiences, and potential.
+
+I look forward to connecting with you and exploring the exciting possibilities that lie ahead in the world of open source programming.
+
+Amine Malek
+
+```{toctree}
+:maxdepth: 3
+:hidden:
+about
+projects/index
+blog
+```
