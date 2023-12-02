@@ -22,17 +22,19 @@ A Mobile App getting Developped By Flutter(Still in Progress)
 :width: 200
 ```
 
-The Popular MasterMind Game
+Music is life
 [https://github.com/Unknownkratos/SpartaTunes](https://github.com/Unknownkratos/SpartaTunes)
 :::
 
 :::{card} Vash-Toro
 :link: VashToro.html
 
+
 ```{image} ../_static/VashToro.png
 :align: right
 :width: 200
 ```
+
 
 Vash-Toro
 [https://github.com/Unknownkratos/Vash-Toro](https://github.com/Unknownkratos/Vash-Toro)
