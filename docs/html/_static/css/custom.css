@@ -1,0 +1,257 @@
+@import "basic.css";
+@import url('http://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('http://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5WvKFKG-AMP6lbBP.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Apply Roboto globally */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Bio area */
+div.profile-pic {
+    margin-top: 1em;
+}
+
+div.profile-pic img {
+    border-radius: 50%;
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.title {
+    margin: 1em auto;
+    max-width: 220px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Theme */
+/* https://pydata-sphinx-theme.readthedocs.io/en/v0.7.2/user_guide/customizing.html */
+
+html[data-theme="light"] {
+    --pst-color-primary: #007bff;  /* Primary blue */
+    --pst-color-text-base: #212529; /* Dark gray for text */
+
+    --pst-color-link: #007bff; /* Blue for links */
+    --pst-color-link-hover: #0056b3; /* Darker blue on hover */
+    --pst-color-headerlink: #212529; /* Dark gray for header links */
+    --pst-color-headerlink-hover: #343a40; /* Slightly darker gray on hover */
+    --pst-color-preformatted-text: #212529; /* Dark gray for preformatted text */
+    --pst-color-preformatted-background: #f8f9fa; /* Light gray background */
+    --pst-color-inline-code: #e83e8c; /* Pink for inline code */
+}
+
+
+html[data-theme="dark"] {
+    --pst-color-primary: #0d6efd; /* Brighter blue for primary elements */
+    --pst-color-text-base: #f8f9fa; /* Light gray for text */
+
+    --pst-color-link: #0d6efd; /* Blue for links */
+    --pst-color-link-hover: #0b5ed7; /* Darker blue on hover */
+    --pst-color-headerlink: #f8f9fa; /* Light gray for header links */
+    --pst-color-headerlink-hover: #e9ecef; /* Slightly lighter gray on hover */
+    --pst-color-preformatted-text: #f8f9fa; /* Light gray for preformatted text */
+    --pst-color-preformatted-background: #212529; /* Very dark gray background */
+    --pst-color-inline-code: #fd7e14; /* Orange for inline code */
+}
+
+
+
+/* Bio area */
+div.profile-pic {
+    margin-top: 1em;
+}
+
+div.profile-pic img {
+    border-radius: 500px;
+    width: 80%;
+    max-width: 190px;
+    margin: 0 auto;
+    display: block;
+}
+
+.bio-info {
+    margin: 1em auto;
+    max-width: 220px;
+}
+
+.name {
+    font-size: 38px;
+}
+
+.focusareas {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.whatido {
+    margin-top: 1em;
+}
+
+
+/* Sidebar for blog archive / each post */
+ul.ablog-archive {
+    padding-left: 0px;
+}
+
+.bd-sidebar h2 {
+    font-size: 1.4em;
+}
+
+.bd-sidebar ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.bd-sidebar li {
+    padding-bottom: .5em;
+}
+
+div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {
+    padding-left: 5%;
+}
+
+/* In-page post lists */
+ul.postlist {
+    padding-left: 0;
+}
+
+ul.postlist > li > p:first-child {
+    font-size: 14px;
+}
+
+ul.postlist li + li {
+    margin-top: 0em;
+}
+
+ul.postlist li > p > a {
+    font-style: normal;
+    font-size: 14px;
+}
+
+
+/* Timeline CSS */
+div.timeline div.card {
+    border: 0px;
+}
+
+div.timeline div.left {
+    text-align: right;
+    border-right: 1px solid black;
+}
+
+div.timeline div.entry::after {
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 50%;
+    content: "";
+    top: 1em;
+    display: block;
+    position: absolute;
+    border: 1px black solid;
+    z-index: 999;
+}
+
+div.timeline div.entry.left::after {
+    right: -.5em;
+}
+
+div.timeline div.entry.right::after {
+    left: -.5em;
+}
+
+
+/* Blog post comments */
+.gsc-reactions {
+    margin-top: 1em;
+}
+
+
+/* Consent form */
+
+/*
+ * Bootstrap Cookie Alert by Wruczek
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+		height:100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 250ms ease-out;
+		color: red;
+		background: hsl(0, 0%, 10%, 0.25);
+		padding: 5px 5px;
+		font-size: 16px;
+		border-radius:5px;
+}
+
+.cookiesContainer {
+    width: 50%;
+    height: 10%;
+    display: block;
+    background: var(--main-background-color);
+    margin: 25%;
+    border-radius: 5px;
+		padding: 50px;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 1px;
+    vertical-align: baseline;
+		margin-bottom:0.5em;
+}
+
+
+/* footer */
+.bd-footer {
+    font-size: 12px;
+    line-height: 1.0;
+}
+
+.footer-links li
+{
+  display:block
+}
+.footer-links.inline li
+{
+  display:inline-block
+}

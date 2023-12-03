@@ -59,12 +59,13 @@ html_theme_options = {
   "show_prev_next": False,
 }
 
-html_favicon = "_static/favicon.ico"
+html_favicon = "_static/img/favicon.ico"
 html_title = "Unknownkratos"
 
 html_static_path = ['_static']
 html_css_files = [
-    'custom.css',
+    'css/custom.css',
+    'css/giscus.css',
 ]
 
 # -- Sidebar Options for HTML output -------------------------------------------------
