@@ -1,6 +1,7 @@
-# About Me
+# About
 
-I am a computer science student at Iu Berlin Campus, studying for my Bachelor's degree. Originally from Tunisia, I have a deep passion for coding and video games, among other hobbies
+I am a computer science student at Iu Berlin Campus, studying for my Bachelor's degree. 
+Originally from Tunisia, I have a deep passion for coding and video games, among other hobbies
 
 
 ## Education
