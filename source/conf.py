@@ -51,7 +51,7 @@ html_theme_options = {
   "icon_links": [
         {
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/victor-ferat/",
+            "url": "https://www.linkedin.com/in/amine-malek-947276247/?originalSubdomain=de",
             "icon": "fa-brands fa-linkedin",
         },        
         ],
