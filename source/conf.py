@@ -51,7 +51,7 @@ html_theme_options = {
   "icon_links": [
         {
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/amine-malek-947276247/?originalSubdomain=de",
+            "url": "https://www.linkedin.com/in/amine-malek-947276247/",
             "icon": "fa-brands fa-linkedin",
         },        
         ],
@@ -87,7 +87,7 @@ post_auto_image = 1 # Index of the image that will be displayed
 post_auto_excerpt = 1 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt
 
 blog_authors = {
-    'me': ('Amine Malek', 'https://vferat.github.io/about.html'),}
+    'me': ('Amine Malek', 'https://Unknownkratos.github.io/about.html'),}
 blog_languages = {
     'en': ('English', None),
 }
