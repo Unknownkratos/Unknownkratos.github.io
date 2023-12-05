@@ -1,0 +1,42 @@
+---
+tags: wasalni
+date: "2023-11-20"
+author: me
+language: en
+---
+
+# WalkThrough Wasalni(Android App)
+
+
+## Beginning of the Journey
+ Wasalni is an innovative mobile app that revolutionizes transportation in Ksibet el Mediouni, Monastir Region. Developed by a talented team, including me, this app aims to provide seamless and reliable ride-hailing services, connecting users with available taxis for hassle-free rides.
+
+
+The creation of **Wasalni** was made possible by a highly skilled team of developers, including Me, JCI members, and two Turkish guests. Each team member brought their unique expertise to the project, ensuring a truly exceptional user experience.
+
+
+The team leveraged cutting-edge technologies to build **Wasalni**:
+
+- Frontend: Svelte and Framework7
+- Backend: Svelte (JavaScript with minimal changes) with Axios for database interactions
+- Database: Cockpit
+- Map Integration: OpenStreetMap
+
+
+Throughout the development process, the team collaborated seamlessly, brainstorming ideas, designing the user interface, and implementing robust functionalities. The frontend, crafted using Svelte and Framework7, guarantees a smooth and delightful mobile app experience, while the backend, built with Svelte, ensures efficient data processing and handling.
+
+
+
+
+**Wasalni** harnesses the power of OpenStreetMap for real-time mapping, enabling users to locate nearby taxis and track their journey with ease. The backend, powered by Svelte and Axios, ensures a seamless connection with the database for swift retrieval of relevant ride and user data.
+
+
+
+As the development nears completion, the team is eagerly preparing for the app's official launch. Rigorous testing is underway to deliver a bug-free and user-friendly experience.
+
+
+
+For those interested in exploring the project's code and progress, the **Wasalni** GitHub repository is available at:
+
+[Wasalni GitHub Repository](https://github.com/Unknownkratos/Wasalni)
+
