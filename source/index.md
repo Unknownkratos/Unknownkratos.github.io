@@ -15,4 +15,5 @@ Amine Malek
 about
 projects/index
 blog
+Sudoku
 ```
