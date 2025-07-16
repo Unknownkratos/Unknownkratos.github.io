@@ -3,7 +3,7 @@
 :::{card} Wane
 :link: projects/UniLife.html
 
-```{image} ../_static/img/home.png
+```{image} _static/img/home.png
 :align: right
 :width: 200
 ```
@@ -16,7 +16,7 @@ A 2D Pixel with Unity and C#.<br>
 :::{card} Wasalni
 :link: projects/SpartaTunes.html
 
-```{image} ../_static/img/wasalni.png
+```{image} _static/img/wasalni.png
 :align: right
 :width: 200
 ```
@@ -29,7 +29,7 @@ A ride-hailing mobile app built with Svelte and OpenStreetMap. <br>
 :::{card} Vash-Toro
 :link: projects/VashToro.html
 
-```{image} ../_static/img/VashToro.png
+```{image} _static/img/VashToro.png
 :align: right
 :width: 200
 ```

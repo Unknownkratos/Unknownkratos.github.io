@@ -1,12 +1,12 @@
 ---
-title: "ScreenSurf – A Minimal Movie Recommendation Web App"
+title: "VashToro – A Minimal Movie Recommendation Web App"
 tags: [screensurf, react, typescript, movies, fullstack]
 date: "2023-11-20"
 author: me
 language: en
 ---
 
-# ScreenSurf – A Movie Recommendation Web App
+# VashToro – A Movie Recommendation Web App
 
 ## Project Overview
 
