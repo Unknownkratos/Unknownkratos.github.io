@@ -5,7 +5,7 @@
 
     - I’m a computer science student at the IU International University of Applied Sciences (Berlin).
     - I’m passionate about building software and exploring new technologies.
-    - When I’m not coding, I enjoy running, making music, and baking.
+    - When I’m not coding, I enjoy running, making music.
 
 **End:** Thanks for visiting my site.
 ```
@@ -31,15 +31,15 @@
 :widths: 30 70
 :header-rows: 0
 
-* - <a href="projects/UniLife.html">Wane</a>
+* - **[Wane](projects/Wane.md)** 
   - A 2D Pixel RPG with Unity and C#. Solo dev project with custom sprites and combat system.  
   [View on GitHub](https://github.com/Unknownkratos/Wane)  
 
-* - **[Wasalni](projects/SpartaTunes.html)**  
+* - **[Wasalni](projects/Wasalni.md)**  
   - A ride-hailing mobile app built with Svelte and OpenStreetMap. Built during a JCI hackathon with real-time map integration.  
   [View on Github](https://github.com/Unknownkratos/Wasalni)  
 
-* - **[Vash-Toro](projects/VashToro.html)**  
+* - **[ScreenSurf](projects/ScreenSurf.md)**  
   - An action arena game built with Unity.  
   [View on GitHub](https://github.com/Unknownkratos/Vash-Toro)
 ```
@@ -52,15 +52,3 @@
 :format: "{date} {title}"
 :list-style: circle
 ```
-
-
-
-
-```{toctree}
-:hidden:
-:maxdepth: 2
-
-projects/UniLife
-projects/SpartaTunes
-projects/VashToro
-``

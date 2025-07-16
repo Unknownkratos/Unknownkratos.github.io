@@ -10,7 +10,7 @@ date: "2023-11-20"
 
 ## Development Overview
 
-As the sole developer, I designed and built *Wane* from the ground up—coding, art, design, and mechanics. Every component, from fluid player controls to dynamic enemy behaviors, was carefully implemented to ensure a polished and responsive experience.
+As the sole developer, I designed and built *Wane* from the ground up — coding, art, design, and mechanics. Every component, from fluid player controls to dynamic enemy behaviors, was carefully implemented to ensure a polished and responsive experience.
 
 Key highlights include:
 
@@ -20,22 +20,15 @@ Key highlights include:
 
 ## Screenshots
 
-```{image} ../_static/img/home.png
-:align: center
-:width: 700
-```
-```{image} ../_static/img/Menu.png
-:align: center
-:width: 700
-```
-```{image} ../_static/img/Gameplay.png
-:align: center
-:width: 700
-```
+| **Home Screen**<br>Start of the adventure. | **Main Menu**<br>Clean UI with pixel aesthetic. |
+|:--:|:--:|
+| ![Home Screen](../_static/img/home.png) | ![Main Menu](../_static/img/Menu.png) |
+
+| **Gameplay**<br>Engage with enemies in desert zones. |
+|:--:|
+| ![Gameplay](../_static/img/Gameplay.png) |
 
 ## Code Sample: Enemy Spawner
-
-Here’s a simplified example of the enemy spawning system:
 
 ```csharp
 using UnityEngine;
@@ -76,23 +69,3 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 }
-```
-## Behind the Scenes: Unity Editor Snapshots
-
-Below are snapshots from the Unity Editor during different stages of development:
-
-### Character Animation – Hyena
-
-
-```{image} ../_static/img/animation.png
-:align: center
-:width: 700
-```
-```{image} ../_static/img/unity.png
-:align: center
-:width: 700
-```
-```{image} ../_static/img/unity1.png
-:align: center
-:width: 700
-```

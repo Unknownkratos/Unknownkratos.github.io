@@ -13,7 +13,6 @@ extensions = [
     'myst_parser',
     'sphinx_design',   # <--- add this
     'sphinxext.opengraph',
-    'sphinxcontrib.pdfembed',
     'sphinxemoji.sphinxemoji',
     'sphinx.ext.intersphinx',
     'sphinxcontrib.bibtex',

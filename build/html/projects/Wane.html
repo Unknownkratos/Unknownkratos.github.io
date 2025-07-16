@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="Wane – A 2D Pixel Art Adventure Game" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="projects/UniLife.html" />
+<meta property="og:url" content="projects/Wane.html" />
 <meta property="og:site_name" content="UnknownKratos" />
 <meta property="og:description" content="Wane is a 2D pixel art adventure game developed using the Unity engine and C#. In this game, you step into the boots of a lone soldier defending a mystical desert realm from relentless monsters. De..." />
 <meta name="description" content="Wane is a 2D pixel art adventure game developed using the Unity engine and C#. In this game, you step into the boots of a lone soldier defending a mystical desert realm from relentless monsters. De..." />
@@ -51,7 +51,7 @@
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'projects/UniLife';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'projects/Wane';</script>
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -214,6 +214,8 @@
       
       
       
+        
+      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -292,12 +294,6 @@
         <center> Computer Science Student, and Gaming Maestro </center>
     </div>
 </div></div>
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"></div>
-</nav></div>
     </div>
   
   
@@ -357,7 +353,7 @@
 <p><em>Wane</em> is a 2D pixel art adventure game developed using the Unity engine and C#. In this game, you step into the boots of a lone soldier defending a mystical desert realm from relentless monsters.</p>
 <section id="development-overview">
 <h2>Development Overview<a class="headerlink" href="#development-overview" title="Link to this heading">#</a></h2>
-<p>As the sole developer, I designed and built <em>Wane</em> from the ground up—coding, art, design, and mechanics. Every component, from fluid player controls to dynamic enemy behaviors, was carefully implemented to ensure a polished and responsive experience.</p>
+<p>As the sole developer, I designed and built <em>Wane</em> from the ground up — coding, art, design, and mechanics. Every component, from fluid player controls to dynamic enemy behaviors, was carefully implemented to ensure a polished and responsive experience.</p>
 <p>Key highlights include:</p>
 <ul class="simple">
 <li><p><strong>Character Movement</strong>: Precise, responsive soldier movement using Unity’s input and physics systems.</p></li>
@@ -367,16 +363,33 @@
 </section>
 <section id="screenshots">
 <h2>Screenshots<a class="headerlink" href="#screenshots" title="Link to this heading">#</a></h2>
-<a class="reference internal image-reference" href="../_images/home.png"><img alt="../_images/home.png" class="align-center" src="../_images/home.png" style="width: 700px;" />
-</a>
-<a class="reference internal image-reference" href="../_images/Menu.png"><img alt="../_images/Menu.png" class="align-center" src="../_images/Menu.png" style="width: 700px;" />
-</a>
-<a class="reference internal image-reference" href="../_images/Gameplay.png"><img alt="../_images/Gameplay.png" class="align-center" src="../_images/Gameplay.png" style="width: 700px;" />
-</a>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Home Screen</strong><br>Start of the adventure.</p></th>
+<th class="head text-center"><p><strong>Main Menu</strong><br>Clean UI with pixel aesthetic.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><img alt="Home Screen" src="../_images/home.png" /></p></td>
+<td class="text-center"><p><img alt="Main Menu" src="../_images/Menu.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Gameplay</strong><br>Engage with enemies in desert zones.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><img alt="Gameplay" src="../_images/Gameplay.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="code-sample-enemy-spawner">
 <h2>Code Sample: Enemy Spawner<a class="headerlink" href="#code-sample-enemy-spawner" title="Link to this heading">#</a></h2>
-<p>Here’s a simplified example of the enemy spawning system:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">UnityEngine</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">System.Collections</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">System.Collections.Generic</span><span class="p">;</span>
@@ -417,19 +430,6 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-<section id="behind-the-scenes-unity-editor-snapshots">
-<h2>Behind the Scenes: Unity Editor Snapshots<a class="headerlink" href="#behind-the-scenes-unity-editor-snapshots" title="Link to this heading">#</a></h2>
-<p>Below are snapshots from the Unity Editor during different stages of development:</p>
-<section id="character-animation-hyena">
-<h3>Character Animation – Hyena<a class="headerlink" href="#character-animation-hyena" title="Link to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../_images/animation.png"><img alt="../_images/animation.png" class="align-center" src="../_images/animation.png" style="width: 700px;" />
-</a>
-<a class="reference internal image-reference" href="../_images/unity.png"><img alt="../_images/unity.png" class="align-center" src="../_images/unity.png" style="width: 700px;" />
-</a>
-<a class="reference internal image-reference" href="../_images/unity1.png"><img alt="../_images/unity1.png" class="align-center" src="../_images/unity1.png" style="width: 700px;" />
-</a>
-</section>
 </section>
 </section>
 

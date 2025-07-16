@@ -1,12 +1,12 @@
 ---
-title: "VashToro – A Minimal Movie Recommendation Web App"
+title: "ScreenSurf – A Minimal Movie Recommendation Web App"
 tags: [screensurf, react, typescript, movies, fullstack]
 date: "2023-11-20"
 author: me
 language: en
 ---
 
-# VashToro – A Movie Recommendation Web App
+# ScreenSurf – A Movie Recommendation Web App
 
 ## Project Overview
 
@@ -26,33 +26,13 @@ The app focuses on a clean interface, smooth interaction, and consistent movie d
   - Favorites and watch history  
   - Fully responsive layout
 
+## Screenshots
 
-Screenshots
-===========
+| **Login Page**<br>Where users authenticate to access personalized features. | **Browse Page**<br>Users swipe movies based on preference. |
+|:--:|:--:|
+| ![Login Page](../_static/img/ScreenSurf/login.png) | ![Browse Page](../_static/img/ScreenSurf/Browse.png) |
 
-Login Page
-----------
+| **Home Page**<br>Landing view showing curated top picks. |
+|:--:|
+| ![Home Page](../_static/img/ScreenSurf/Home.png) |
 
-```{image} ../_static/img/ScreenSurf/login.png
-:align: center
-:width: 700
-:alt: Login screen
-```
-
-Browse Page
------------
-
-```{image} ../_static/img/ScreenSurf/Browse.png
-:align: center
-:width: 700
-:alt: Browsing Page
-```
-
-Home Page
----------
-
-```{image} ../_static/img/ScreenSurf/Home.png
-:align: center
-:width: 700
-:alt: Home Page
-```
