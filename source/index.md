@@ -1,19 +1,45 @@
-# Welcome to my website!
+# Home
 
-I am thrilled to have you here. 
-As a passionate Computer Science Student, I am excited to share my journey and showcase my work in the realm of open source programming. Hence, I invite you to explore the diverse range of projects I have been involved in. There you will find my commitment to clean code, efficiency, and attention to detail.
+Hi, I’m Amine Malek.
 
-Whether you are a fellow enthusiast, a potential collaborator, or an employer, I hope that this portfolio provides you with insight into my skills, experiences, and potential.
+I’m a computer science student passionate about building software and exploring new technologies.
 
-I look forward to connecting with you and exploring the exciting possibilities that lie ahead in the world of open source programming.
+When I’m not coding, I enjoy hiking, making music, and experimenting with baking.
 
-Amine Malek
+Thanks for visiting my site.
 
+
+## Education
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2023 - Today
+:columns: 3
+:::
+:::{grid-item-card}  Bachelor in Computer Science
+:columns: 9
+IU International University of Applied Sciences (Berlin)
+:::
+
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2018 - 2022
+:columns: 3
+:::
+:::{grid-item-card} High School Diploma(Lyceé Secondaire Ksibet el Mediouni)
+:columns: 9
+Informatics Centered Studies(8 hours of data,IT,and Programming Languages)
+:::
+
+::::
 ```{toctree}
-:maxdepth: 3
+:maxdepth: 5
 :hidden:
-about
-projects/index
+
+projects
 blog
 Sudoku
 ```
