@@ -7,14 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Wane - A 2D Pixel Art Adventure Game" />
+<meta property="og:title" content="Ricing My Workflow: Arch Linux + Hyprland Hyde" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="posts/2022/2022-10-10.html" />
 <meta property="og:site_name" content="UnknownKratos" />
-<meta property="og:description" content="This blog post illustrates the development of Wane. Development Process: the 2D pixel art adventure game Wane. Embark on an extraordinary journey as a fearless soldier, determined to protect the re..." />
-<meta name="description" content="This blog post illustrates the development of Wane. Development Process: the 2D pixel art adventure game Wane. Embark on an extraordinary journey as a fearless soldier, determined to protect the re..." />
+<meta property="og:description" content="Ever since I first tried Linux, I’ve been hooked on how much control you get. My journey started with Debian — stable, clean, and easy to use. But after a while, I wanted something more: More minim..." />
+<meta name="description" content="Ever since I first tried Linux, I’ve been hooked on how much control you get. My journey started with Debian — stable, clean, and easy to use. But after a while, I wanted something more: More minim..." />
 
-    <title>Wane - A 2D Pixel Art Adventure Game &#8212; Unknownkratos</title>
+    <title>Ricing My Workflow: Arch Linux + Hyprland Hyde &#8212; Unknownkratos</title>
   
   
   
@@ -317,7 +317,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Wane - A 2D Pixel Art Adventure Game</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Ricing My Workflow: Arch Linux + Hyprland Hyde</span></li>
   </ul>
 </nav>
 </div>
@@ -334,55 +334,92 @@
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
-                   <section id="wane-a-2d-pixel-art-adventure-game">
-<h1>Wane - A 2D Pixel Art Adventure Game<a class="headerlink" href="#wane-a-2d-pixel-art-adventure-game" title="Link to this heading">#</a></h1>
-<p>This blog post illustrates the development of  Wane.</p>
-<section id="development-process">
-<h2>Development Process<a class="headerlink" href="#development-process" title="Link to this heading">#</a></h2>
-<p>the 2D pixel art adventure game Wane. Embark on an extraordinary journey as a fearless soldier, determined to protect the realm from menacing monsters lurking in the vast desert.</p>
-<p><strong>Wane</strong> was brought to life through the powerful Unity game engine and the magic of C# programming. As the sole developer of the game, I meticulously crafted each aspect of the gameplay, from character movement and combat mechanics to enemy AI and level design.</p>
-<p>Utilizing Unity’s versatile scripting capabilities, I programmed the soldier’s movement, making sure every step felt fluid and responsive. I implemented a sophisticated combat system that allowed players to engage in thrilling swordplay with precise attacks and parries.</p>
-<p>The captivating desert landscape in <strong>Wane</strong> was meticulously handcrafted using Photoshop. I drew inspiration from real desert terrain and infused it with fantastical elements to create an immersive and visually stunning world.</p>
-<p>Picture Showcase</p>
+                   <section id="ricing-my-workflow-arch-linux-hyprland-hyde">
+<h1>Ricing My Workflow: Arch Linux + Hyprland Hyde<a class="headerlink" href="#ricing-my-workflow-arch-linux-hyprland-hyde" title="Link to this heading">#</a></h1>
+<p>Ever since I first tried Linux, I’ve been hooked on how much control you get. My journey started with <strong>Debian</strong> — stable, clean, and easy to use. But after a while, I wanted something more:</p>
+<ul class="simple">
+<li><p>More <strong>minimal</strong></p></li>
+<li><p>More <strong>secure</strong></p></li>
+<li><p>More <strong>customizable</strong></p></li>
+</ul>
+<p>So naturally, I landed on <strong>Arch Linux</strong>.</p>
+<hr class="docutils" />
+<section id="why-hyprland-hyde">
+<h2>Why Hyprland Hyde?<a class="headerlink" href="#why-hyprland-hyde" title="Link to this heading">#</a></h2>
+<p>I didn’t want to start my ricing journey completely from scratch — spending hours setting up configs and guessing which bar or compositor to use. That’s where <strong>Hyprland Hyde</strong> came in.</p>
+<p>Hyde gave me:</p>
+<ul class="simple">
+<li><p>A <strong>pre-configured desktop</strong> to start from</p></li>
+<li><p>Clean, modular configs (no bloated rice mess)</p></li>
+<li><p>A beautiful tiling setup that I could tweak easily</p></li>
+</ul>
+<p>I just opened the config files, changed a few keybindings, adjusted the wallpaper and layout, and <strong>boom — my own custom desktop</strong>.</p>
 </section>
-<section id="a-glimpse-of-the-source-code">
-<h2>A glimpse of the Source Code<a class="headerlink" href="#a-glimpse-of-the-source-code" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
----
-PlayerMovement.cs
-EnemyBehavior.cs
-EnemySpawner
-public GameObject enemyPrefab; // The enemy prefab that will be spawned public float spawnInterval = if; // The interval at which enemies will be spawned public int maxEnemies = 5; // The maximum number of enemies that can exist at once public Transform[] spawnPoints; // The spawn points where enemies will be spawned public float cooldownTime = 10; // The amount of time between waves of enemies
-
-public List&lt;GameObject&gt; activeEnemies = new List&lt;GameObject&gt;(); // A list of active enemies in the scene
- private bool isCooling Down = false; // Whether the spawner is currently on cooldown
-Unity Message | O references
-
-private void Start()
-{
-	StartCoroutine (SpawnEnemies());
-}
-private IEnumerator SpawnEnemies()
-{
-while (true)
-{
-	if (activeEnemies. Count &lt; maxEnemies &amp;&amp; !isCoolingDown)
-{
-		// Randomly select a spawn point
-		Transform spawnPoint = spawnPoints [Random.Range(0, 				spawnPoints.Length)];
-		// Spawn the enemy at the selected spawn point
-		GameObject enemy = Instantiate (enemyPrefab, spawnPoint.position, 		spawnPoint.rotation);
-		// Add the enemy to the list of active enemies 					activeEnemies.Add(enemy);
-		yield return new WaitForSeconds (spawnInterval);
-	}
-}
-
-
----
-
-
-</pre></div>
+<hr class="docutils" />
+<section id="tools-i-use">
+<h2>Tools I Use<a class="headerlink" href="#tools-i-use" title="Link to this heading">#</a></h2>
+<p>Here’s my current workflow stack:</p>
+<ul class="simple">
+<li><p><strong>WM</strong>: Hyprland</p></li>
+<li><p><strong>Bar</strong>: Waybar</p></li>
+<li><p><strong>Terminal</strong>: Alacritty</p></li>
+<li><p><strong>Shell</strong>: Zsh + Starship</p></li>
+<li><p><strong>Launcher</strong>: Rofi</p></li>
+<li><p><strong>Theme</strong>: Nord (for now)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="screenshots">
+<h2>Screenshots<a class="headerlink" href="#screenshots" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Main Desktop</strong><br>Clean setup with Waybar &amp; Hyprland</p></th>
+<th class="head text-center"><p><strong>Rofi Launcher</strong><br>Minimal theme, fast app search</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><img alt="Desktop" src="posts/_static/img/rice/home.png" /></p></td>
+<td class="text-center"><p><img alt="Rofi" src="posts/_static/img/rice/rofi.png" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Neofetch + Terminal</strong><br>Starship prompt with Alacritty</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><img alt="Terminal" src="posts/_static/img/rice/terminal.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="why-im-sticking-with-it">
+<h2>Why I’m Sticking With It<a class="headerlink" href="#why-im-sticking-with-it" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>It boots fast</p></li>
+<li><p>It uses barely any RAM</p></li>
+<li><p>It looks great and keeps me focused</p></li>
+<li><p>I know exactly <strong>what’s running and why</strong></p></li>
+</ul>
+<p>No bloat. Just my system, my config.</p>
+</section>
+<hr class="docutils" />
+<section id="whats-next">
+<h2>What’s Next?<a class="headerlink" href="#whats-next" title="Link to this heading">#</a></h2>
+<p>I’m thinking of:</p>
+<ul class="simple">
+<li><p>Adding <strong>mako</strong> for notifications</p></li>
+<li><p>Trying <strong>Foot terminal</strong></p></li>
+<li><p>Creating a theme from scratch</p></li>
+<li><p>Publishing my dotfiles when I feel confident</p></li>
+</ul>
+<hr class="docutils" />
+<p>If you’re thinking about switching to a riced Linux setup, I honestly recommend this path:<br />
+<strong>Arch + Hyprland Hyde</strong> = great starting point + infinite customization potential.</p>
 </section>
 </section>
 
